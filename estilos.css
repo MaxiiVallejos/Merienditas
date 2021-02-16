@@ -1,0 +1,141 @@
+*{
+  margin: 0;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+
+}
+
+.padre{
+  display: flex;
+  flex-flow: column nowrap;
+}
+  .header{
+    background: url("imagenes/fondo.jpg");
+    background-attachment: contain;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-flow: column nowrap;
+  }
+    .menu{
+      background: rgba(0,0,0, .1);
+      display: flex;
+      flex-flow: row nowrap;
+
+      align-items: center;
+    }
+      .logo{
+        flex: 1 1 auto;
+      }
+        .imagen-logo{
+          width: 100px;
+          height: 100px;
+          padding: 0;
+          margin: 0;
+        }
+
+      .nav{
+        flex: 5 1 auto;
+      }
+        .nav a{
+          color: #fff;
+          font-size: 15px;
+          text-transform: uppercase;
+          padding: 0 10px;
+          letter-spacing: 2px;
+        }
+        .nav a:hover{
+          color: lightblue;
+        }
+      .social{
+        flex: 1 1 auto;
+      }
+        .social a{
+          color: #fff;
+        }
+        .social a:hover{
+          color: lightblue;
+        }
+    .texto-principal{
+  /*    background-color: #f07b3f;*/
+       height: 500px;
+       display: flex;
+       align-items: center;
+    }
+        h1{
+          font-size: 21px;
+          color: black;
+          font-weight: 300;
+          text-align: center;
+          line-height: 1.6;
+        }
+
+  .section{
+    background-color: #000;
+    display: flex;
+  }
+    .articulos{
+      background-color: #4e4e6A;
+      flex: 2 1 auto;
+      display: flex;
+      flex-flow: row wrap;
+    }
+      .articulo{
+        background-color: #1f6cb0;
+        flex: 1 1 40%;
+      }
+      .navegacion{
+        background-color: #70a3c4;
+        flex: 1 1 100%;
+      }
+        .navegacion a{
+          color: black;
+        }
+    .aside{
+      background-color: #f73f52;
+      flex: 1 1 auto;
+    }
+      .anuncios{
+        background-color: #ffea85;
+      }
+
+  .footer{
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+  }
+    .pie{
+      background-color: #e6af2e;
+      width: 300px;
+    }
+
+@media all and (max-width: 800px){
+  .section{
+    flex-direction: column;
+  }
+  .menu{
+    flex-direction: column;
+    height: auto;
+  }
+  .aside{
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media all and (max-width: 600px){
+  .articulos{
+    flex-direction: column;
+  }
+}
+
+@media all and (max-width: 600px){
+  .aside{
+    flex-direction: column;
+  }
+}
